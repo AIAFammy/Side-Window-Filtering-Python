@@ -14,6 +14,17 @@ swf_img = SideWindowFiltering_3d(img, kernel=3, mode='mean')
 
 * SWF_demo.ipynb demonstrate some examples
 
+# Requirment
+
+```python
+import cv2
+import numpy
+import numba
+```
+
+* Mostly use basic function to implement, version of packages might not be a big deal.
+* Use numba just-in-time to complie python code, otherwise it takes extremely long time when execution. 
+
 # DEMO
 
 * Original image & Add salt noise image
@@ -26,3 +37,10 @@ swf_img = SideWindowFiltering_3d(img, kernel=3, mode='mean')
 ![alt](images/mean_3x3_iter10.png)
 ![alt](images/mean_3x3_iter20.png)
 ![alt](images/mean_3x3_iter50.png)
+
+# Compare mean filter & median filter
+
+* results by apply (5, 5) kernel size
+
+* median filter takes much more time than mean filter
+
