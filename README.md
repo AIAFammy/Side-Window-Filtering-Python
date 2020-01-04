@@ -41,8 +41,11 @@ import numba
 # Compare mean filter & median filter
 
 * Median filter takes much more time than mean filter
+(There must exists more efficient way to implement it.)
 
 ![alt](images/execution_times.png)
+
+* Image size is 555 x 792 and run on Linux with Intel(R) Xeon(R) CPU E5-2667 v4 @ 3.20GHz
 
 * Results by apply (5, 5) kernel size
 
