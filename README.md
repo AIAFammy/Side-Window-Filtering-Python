@@ -16,4 +16,6 @@ swf_img = SideWindowFiltering_3d(img, kernel=3, mode='mean')
 
 # DEMO
 
+* Original image & Add salt noise image
 
+![alt](images/origin&noise.png)
