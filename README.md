@@ -40,7 +40,17 @@ import numba
 
 # Compare mean filter & median filter
 
+* median filter takes much more time than mean filter
+
+![alt](images/execution_times.png)
+
 * results by apply (5, 5) kernel size
 
-* median filter takes much more time than mean filter
+![alt](images/compare_1.png)
+![alt](images/compare_2.png)
+![alt](images/compare_3.png)
+![alt](images/compare_10.png)
+![alt](images/compare_30.png)
+
+
 
