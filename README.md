@@ -7,10 +7,10 @@
 * Download python file SideWindowFilter.py
 * 下載 SideWindowFilter.py 檔案
 
-'''python
+```python
 import cv2
 from SideWindowFilter import SideWindowFiltering_3d
 
 img = cv2.imread('aiaceo.jpg')
 swf_img = SideWindowFiltering_3d(swf_img, kernel=3, mode='mean')
-'''
+```
