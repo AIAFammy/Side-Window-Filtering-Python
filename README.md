@@ -19,3 +19,9 @@ swf_img = SideWindowFiltering_3d(img, kernel=3, mode='mean')
 * Original image & Add salt noise image
 
 ![alt](images/origin&noise.png)
+
+* 3x3 Mean Filtering by traditional method and SWF method
+
+![alt](images/mean_3x3_iter1.png)
+![alt](images/mean_3x3_iter10.png)
+![alt](images/mean_3x3_iter20.png)
