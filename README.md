@@ -1,6 +1,8 @@
 # Side-Window-Filtering-Python
 * Python implementation of [CVPR 2019 Oral paper Side Window Filtering](https://arxiv.org/pdf/1905.07177.pdf)
 
+* [中文的簡介 medium](https://medium.com/ai-academy-taiwan/%E5%8F%AF%E4%BB%A5%E4%BF%9D%E7%95%99%E5%BD%B1%E5%83%8F%E9%82%8A%E7%B7%A3%E7%9A%84%E8%B6%85%E5%BC%B7%E5%B9%B3%E6%BB%91%E6%BF%BE%E6%B3%A2-2985d2e433ad)
+
 # Usage
 * Download python file SideWindowFilter.py
 
