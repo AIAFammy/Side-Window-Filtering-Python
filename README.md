@@ -19,11 +19,12 @@ swf_img = SideWindowFiltering(img, kernel=3, mode='mean')
 * SWF_demo.ipynb demonstrate some examples
 
 ```python
-swf_img = SideWindowFiltering_3d(img, 
-                                 kernel=3, # 3, 5, 7, 9, 11, ...
-                                 mode='mean', # 'mean', 'gaussian', 'median'
-                                 use_big=False # False: 8 angles, True: 12 angles
-                                 )
+swf_img = SideWindowFiltering_3d(
+               img, 
+               kernel=3, # 3, 5, 7, 9, 11, ...
+               mode='mean', # 'mean', 'gaussian', 'median'
+               use_big=False # False: 8 angles, True: 12 angles
+               )
 ```
 
 # Requirment
