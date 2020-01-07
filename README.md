@@ -6,13 +6,25 @@
 
 ```python
 import cv2
-from SideWindowFilter import SideWindowFiltering_3d
+from SideWindowFilter import SideWindowFiltering_3d # for RGB image
+from SideWindowFilter import SideWindowFiltering # for Gray image
 
 img = cv2.imread('aiaceo.jpg')
 swf_img = SideWindowFiltering_3d(img, kernel=3, mode='mean')
+
+img = cv2.imread('aiaceo.jpg', 0)
+swf_img = SideWindowFiltering(img, kernel=3, mode='mean')
 ```
 
 * SWF_demo.ipynb demonstrate some examples
+
+```python
+swf_img = SideWindowFiltering_3d(img, 
+                                 kernel=3, # 3, 5, 7, 9, 11, ...
+                                 mode='mean', # 'mean', 'gaussian', 'median'
+                                 use_big=False # False: 8 angles, True: 12 angles
+                                 )
+```
 
 # Requirment
 
@@ -54,6 +66,8 @@ import numba
 ![alt](images/compare_1.png)
 ![alt](images/compare_2.png)
 ![alt](images/compare_3.png)
+![alt](images/compare_4.png)
+![alt](images/compare_5.png)
 ![alt](images/compare_10.png)
 
 
