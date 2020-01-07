@@ -55,7 +55,6 @@ import numba
 ![alt](images/compare_2.png)
 ![alt](images/compare_3.png)
 ![alt](images/compare_10.png)
-![alt](images/compare_30.png)
 
 
 
