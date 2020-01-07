@@ -38,7 +38,7 @@ import numba
 ![alt](images/mean_3x3_iter20.png)
 ![alt](images/mean_3x3_iter50.png)
 
-# Compare mean filter & median filter
+# Compare mean & gaussian & median
 
 * Median filter takes much more time than mean filter
 (There must exists more efficient way to implement it.)
@@ -50,6 +50,7 @@ import numba
 
 * Results by apply (5, 5) kernel size
 
+![alt](images/compare_0.png)
 ![alt](images/compare_1.png)
 ![alt](images/compare_2.png)
 ![alt](images/compare_3.png)
