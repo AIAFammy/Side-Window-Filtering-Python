@@ -8,12 +8,13 @@
 
 ```python
 import cv2
-from SideWindowFilter import SideWindowFiltering_3d # for RGB image
-from SideWindowFilter import SideWindowFiltering # for Gray image
+from SideWindowFilter import SideWindowFiltering_3d, SideWindowFiltering 
 
+# for RGB image
 img = cv2.imread('aiaceo.jpg')
 swf_img = SideWindowFiltering_3d(img, kernel=3, mode='mean')
 
+# for Gray image
 img = cv2.imread('aiaceo.jpg', 0)
 swf_img = SideWindowFiltering(img, kernel=3, mode='mean')
 ```
