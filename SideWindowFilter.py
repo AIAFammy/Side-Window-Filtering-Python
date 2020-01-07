@@ -96,6 +96,14 @@ def SideWindowFiltering(img, kernel=3, mode='mean', use_big=False):
     if mode == 'mean':
         filters = [f / np.sum(f) for f in filters]
         each_flattens = np.array([cv2.filter2D(img ,-1, filters[i]).reshape(-1) for i in range(len(filters))])
+    elif mode == 'gaussian':
+        k = kernel // 2
+        x, y = np.mgrid[-k:k+1,-k:k+1]
+        sigma = 0.3*((kernel-1)*0.5 - 1) + 0.8
+        gaussian_kernel = np.exp(-((x**2+y**2)/(2*sigma**2)))
+        filters = [np.multiply(f, gaussian_kernel) for f in filters]
+        filters = [f / np.sum(f) for f in filters]
+        each_flattens = np.array([cv2.filter2D(img ,-1, filters[i]).reshape(-1) for i in range(len(filters))])
     elif mode == 'median':
         kernel = filters.shape[-1]
         each_flattens = np.array([median_filter(img, filters[i], kernel).reshape(-1) for i in range(len(filters))])
